@@ -1,0 +1,100 @@
+.todo-item {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  border: 1px #1212 solid;
+  border-radius: 12px;
+  padding: 25px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+
+  .todo-info {
+    max-width: 700px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 20px;
+    &__file {
+      margin-top: 10px;
+    }
+  }
+
+  .todo-other-info {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    &__form {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      padding: 25px;
+      box-sizing: border-box;
+      border-radius: 12px;
+      transform: translateY(100%);
+      background: #545454;
+      flex-direction: column;
+      font-family: 'Inter';
+      font-weight: 500;
+      font-size: 18px;
+      color: #fff;
+      z-index: 1;
+
+      h1 {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      label {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      input {
+        margin-bottom: 0;
+        outline: none;
+        padding: 6px 15px;
+        border: 1px #000 solid;
+        border-radius: 12px;
+        margin-bottom: 10px;
+      }
+
+      input::not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    .todo-delete {
+      margin-bottom: 10px;
+    }
+
+    button {
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 12px;
+      background: #343434;
+      color: #fff;
+      transition: all 0.3s;
+    }
+    button:hover {
+      background: #282828;
+      box-shadow: 1px 2px 3px #12121266;
+    }
+  }
+
+  .todo-change {
+    position: relative;
+    &-button {
+      width: 100%;
+    }
+  }
+
+  .todo-item-date {
+    margin-top: 10px;
+  }
+}
